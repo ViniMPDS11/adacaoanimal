@@ -1,0 +1,38 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    box-shadow: 0 8px 24px 0 hsla(0, 0%, 0%, 0.10),
+    0 2px 8px 0 hsla(0, 0%, 0%, 0.15);
+    background-color: #FFF;
+    align-items: center;
+    padding: 26px;
+}
+.logo {
+    padding: 32px 96px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #AAE5A1;
+    width: fit-content;
+    border-radius: 8px;
+    color: #FFF;
+    margin: 0;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 4px;
+}
+
+.flexEnd {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+}

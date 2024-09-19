@@ -1,0 +1,27 @@
+.menuLink {
+    display: flex;
+    padding: 8px;
+    gap: 8px;
+    flex-direction: row;
+    text-decoration: none;
+    color: #323232;
+    font-size: 1.5rem;
+    align-items: center;
+    border-radius: 8px;
+    transition: all .1s ease-in-out;
+}
+
+.menuLink:hover {
+    color: #FFF;
+    background-color: #5170fc;
+}
+
+.menuLink svg {
+    fill: #323232;
+    width: 26px;
+    height: 26px;
+}
+
+.menuLink:hover svg {
+    fill: #FFF;
+}
