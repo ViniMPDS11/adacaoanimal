@@ -16,5 +16,9 @@ html {
   height: 100vh;
   overflow-y: auto;
   width: 100%;
-  padding: 24px 0 0 0;
+  padding: 26px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e95555 !important;
 }

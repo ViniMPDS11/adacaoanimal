@@ -1,9 +1,14 @@
-import { useEffect, useState } from 'react';
 import styles from './Slider.module.css';
+import './Slider.css';
+import { register } from 'swiper/element/bundle'; // Registrar módulos
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+register(); // Registrar todos os módulos do swiper/element
 
 const Slider = () => {
-    const [currentSlideIndex, setCurrentSlideIndex] = useState(1);
-
     const slides = [
         {
             id: 1,
@@ -27,36 +32,23 @@ const Slider = () => {
         },
     ];
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlideIndex((prevIndex) =>
-                prevIndex === slides.length - 1 ? 0 : prevIndex + 1
-            );
-        }, 5 * 1000);
-
-        return () => clearInterval(interval);
-    }, [currentSlideIndex, slides.length]);
-
-    function handleCurrentSlideClick(slideIndex) {
-        setCurrentSlideIndex(slideIndex);
-    }
-
     return (
-        <div className={styles.slider}>
-            <div className={styles.slides}>
-                {slides.map((val, index) => (
-                    <div className={`${styles.slide} ${index === currentSlideIndex ? styles.active : ''}`} key={val.id}>
-                        <img src={val.imageUrl} alt={val.name} />
-                    </div>
-                ))}
-
-                <div className={styles.manualNavigation}>
-                    {slides.map((val, index) => (
-                        <button type="button" key={val.id} className={`${styles.manualBtn} ${index === currentSlideIndex ? styles.active : ''}`} onClick={() => handleCurrentSlideClick(index)} />
-                    ))}
-                </div>
-            </div>
-        </div>
+        <Swiper
+            slidesPerView={1}
+            pagination={{ clickable: true }}
+            navigation={false}
+            className={styles.slides}
+        >
+            {slides.map((val) => (
+                <SwiperSlide key={val.id}>
+                    <img
+                        className={styles.slideItem}
+                        src={val.imageUrl}
+                        alt={val.name}
+                    />
+                </SwiperSlide>
+            ))}
+        </Swiper>
     );
 };
 
