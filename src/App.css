@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #F4F4F4;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  padding: 26px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e95555 !important;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+}
