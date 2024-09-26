@@ -1,6 +1,11 @@
 import styles from './Menu.module.css';
 import Diviser from './Diviser/index';
 import MenuLink from './MenuLink';
+<<<<<<< HEAD
+=======
+import Burger from '../Burger';
+
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
 import { ReactComponent as HeadphoneIcon } from '../../assets/images/headphone.svg';
 import { ReactComponent as MenuIcon } from '../../assets/images/home.svg';
 import { ReactComponent as HelpIcon } from '../../assets/images/help.svg';
@@ -10,6 +15,10 @@ import { ReactComponent as Partnership } from '../../assets/images/partnership.s
 const Menu = () => {
   return (
     <div className={styles.menu}>
+<<<<<<< HEAD
+=======
+      <Burger />
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
       <p className={styles.logo}>LOGO</p>
       <Diviser />
       <div className={styles.links}>

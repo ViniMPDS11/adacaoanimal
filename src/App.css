@@ -8,6 +8,10 @@ html {
 
 .container {
   display: flex;
+<<<<<<< HEAD
+=======
+  flex-direction: row;
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
 }
 
 .content {
@@ -21,4 +25,13 @@ html {
 
 .swiper-pagination-bullet-active {
   background-color: #e95555 !important;
+<<<<<<< HEAD
+=======
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
 }

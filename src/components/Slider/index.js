@@ -25,11 +25,14 @@ const Slider = () => {
             imageUrl: "https://optimumpet.com.br/media/uploads/2023/11/racas-de-cachorro-pequeno-chihuahua-01-1024x682.webp",
             name: "Cachorro 3"
         },
+<<<<<<< HEAD
         {
             id: 4,
             imageUrl: "https://optimumpet.com.br/media/uploads/2023/11/racas-de-cachorro-pequeno-dachshund-salsicha-1024x682.webp",
             name: "Cachorro 4"
         },
+=======
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
     ];
 
     return (
@@ -38,6 +41,13 @@ const Slider = () => {
             pagination={{ clickable: true }}
             navigation={false}
             className={styles.slides}
+<<<<<<< HEAD
+=======
+            centeredSlides={true}
+            autoplay={{
+                delay: 5000
+            }}
+>>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
         >
             {slides.map((val) => (
                 <SwiperSlide key={val.id}>
