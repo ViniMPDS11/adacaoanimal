@@ -1,11 +1,8 @@
 .menu {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     max-width: 400px;
-=======
     max-width: 500px;
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
     width: 25vw;
     height: 100vh;
     top: 0;
@@ -15,9 +12,9 @@
     background-color: #FFF;
     align-items: center;
     padding: 26px;
+    transition: all ease-in-out .2s;
 }
 .logo {
-<<<<<<< HEAD
     padding: 32px 96px;
     font-size: 2rem;
     font-weight: 700;
@@ -26,7 +23,6 @@
     border-radius: 8px;
     color: #FFF;
     margin: 0;
-=======
     padding: 32px;
     font-size: 2rem;
     font-weight: 700;
@@ -36,7 +32,25 @@
     color: #FFF;
     margin: 0;
     text-align: center;
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
+}
+.logo2 {
+    padding: 32px 96px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #AAE5A1;
+    width: fit-content;
+    border-radius: 8px;
+    color: #FFF;
+    margin: 0;
+    padding: 32px;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #AAE5A1;
+    width: 100%;
+    border-radius: 8px;
+    color: #FFF;
+    margin: 0;
+    text-align: center;
 }
 .links {
     display: flex;
@@ -52,8 +66,6 @@
     flex-direction: column;
     justify-content: flex-end;
     flex-grow: 1;
-<<<<<<< HEAD
-=======
 }
 
 @media (max-width: 1100px) {
@@ -61,16 +73,34 @@
         flex-direction: row;
         max-width: unset;
         width: 100vw;
-        height: 60px;
+        height: 82px;
         box-shadow: 0 8px 24px 0 hsla(0, 0%, 0%, 0.10),
         0 2px 8px 0 hsla(0, 0%, 0%, 0.15);
         background-color: #FFF;
+        align-items: flex-start;
     }
     .logo {
         display: none;
     }
+    .logo2 {
+        width: fit-content;
+        position: absolute;
+        top: 26px;
+        right: 26px;
+        font-size: 1rem;
+        padding: 4px;
+    }
     .links {
         display: none;
     }
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
+}
+.checkedStyle {
+    height: 100vh;
+    flex-direction: column;
+}
+
+.checkedStyle .links {
+    display: flex;
+    padding: 0;
+    margin-top: 64px;
 }

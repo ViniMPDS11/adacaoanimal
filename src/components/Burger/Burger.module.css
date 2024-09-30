@@ -16,7 +16,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background: black;
+    background: #323232;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -62,4 +62,4 @@
     .burger {
       display: block;
     }
-  }
+}

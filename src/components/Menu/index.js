@@ -1,36 +1,33 @@
+import { useState } from 'react';
 import styles from './Menu.module.css';
+import './Menu.css';
 import Diviser from './Diviser/index';
 import MenuLink from './MenuLink';
-<<<<<<< HEAD
-=======
 import Burger from '../Burger';
 
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
 import { ReactComponent as HeadphoneIcon } from '../../assets/images/headphone.svg';
 import { ReactComponent as MenuIcon } from '../../assets/images/home.svg';
 import { ReactComponent as HelpIcon } from '../../assets/images/help.svg';
 import { ReactComponent as AdoptMeIcon } from '../../assets/images/adoptme.svg';
 import { ReactComponent as Partnership } from '../../assets/images/partnership.svg';
 
-const Menu = () => {
+const Menu = ({ isChecked, setIsChecked }) => {
   return (
-    <div className={styles.menu}>
-<<<<<<< HEAD
-=======
-      <Burger />
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
+    <div className={`${styles.menu} ${isChecked ? styles.checkedStyle : ''}`}>
+
+      <Burger isChecked={isChecked} setIsChecked={setIsChecked} />
       <p className={styles.logo}>LOGO</p>
       <Diviser />
       <div className={styles.links}>
-        <MenuLink icon={<MenuIcon />} text='Início' />
-        <MenuLink icon={<HeadphoneIcon />} text='Fale conosco' />
-        <MenuLink icon={<HelpIcon />} text='Ajuda' />
-        <MenuLink icon={<AdoptMeIcon />} text='Quero adotar' />
-        <MenuLink icon={<Partnership />} text='Seja parceiro' />
+        <MenuLink icon={<MenuIcon />} text='Início' path='/'/>
+        <MenuLink icon={<HeadphoneIcon />} text='Fale conosco' path='/FaleConosco' />
+        <MenuLink icon={<HelpIcon />} text='Ajuda' path='/FAQ' />
+        <MenuLink icon={<AdoptMeIcon />} text='Quero adotar' path='/Adocao' />
+        <MenuLink icon={<Partnership />} text='Seja parceiro' path='/SejaParceiro' />
       </div>
       <div className={styles.flexEnd}>
         <Diviser />
-        <p className={styles.logo}>LOGO</p>
+        <p className={styles.logo2}>LOGO</p>
       </div>
     </div>
   );

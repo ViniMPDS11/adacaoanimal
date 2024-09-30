@@ -12,8 +12,7 @@
 }
 
 .menuLink:hover {
-    color: #FFF;
-    background-color: #5170fc;
+    background-color: #00000010;
 }
 
 .menuLink svg {
@@ -21,7 +20,11 @@
     width: 26px;
     height: 26px;
 }
+.linkDestacado.menuLink {
+    background-color: #d8dfff;
+    color: #5170fc;
+}
 
-.menuLink:hover svg {
-    fill: #FFF;
+.linkDestacado.menuLink svg {
+    fill: #5170fc;
 }

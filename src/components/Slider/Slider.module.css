@@ -1,48 +1,22 @@
 .slides {
-<<<<<<< HEAD
-        max-width: 1920px;
-        max-height: 1080px;
+        width: 100%;
+        cursor: pointer;
 
-    .slideItem {
-        max-width: 1920px;
-        max-height: 1080px;
-        object-fit: cover;
-=======
-    width: 100%;
-    height: 500px !important;
-}
-
-.slideItem {
-    border-radius: 8px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+        .slideItem {
+            width: 90%;
+            height: auto; /* Ajusta a altura automaticamente para manter a proporção */
+            max-width: 1920px; /* Define o limite máximo da largura */
+            max-height: 1080px; /* Define o limite máximo da altura */
+            object-fit: cover; /* Garante que a imagem cobre todo o contêiner sem distorção */
+            aspect-ratio: 16/9; /* Define a proporção 16:9 */
+            border-radius: 8px;
+          }
 }
 
-@media (max-width: 820px) {
-    .slides {
-      max-width: 700px;
-      height: 400px !important;
-    }
+.activeSlide img {
+    cursor: pointer; /* Aplica o cursor pointer no slide central */
 }
 
-@media (max-width: 660px) {
-    .slides {
-      max-width: 500px;
-      height: 300px !important;
-    }
-}
-@media (max-width: 510px) {
-    .slides {
-      max-width: 400px;
-      height: 250px !important;
-    }
-}
-@media (max-width: 430px) {
-    .slides {
-      max-width: 300px;
-      height: 200px !important;
->>>>>>> bf8354eaf015398986cf8f6ed2de409611b7c3d6
-    }
+.slideItem:not(.activeSlide) img {
+    cursor: grab; /* Aplica o cursor de mão para os slides laterais */
 }
