@@ -1,0 +1,18 @@
+.posts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.postsArea {
+    margin-top: 2.5rem;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+ul {
+    margin: auto;
+}

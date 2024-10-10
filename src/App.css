@@ -1,4 +1,6 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -6,18 +8,50 @@ html {
   background-color: #F4F4F4;
 }
 
+a, button, input, textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 5rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   overflow-y: auto;
   width: 100%;
   padding: 26px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 16px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .swiper-pagination-bullet-active {

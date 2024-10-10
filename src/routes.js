@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Menu from './components/Menu'
 import './App.css';
 import Home from './pages/Home';
+import SejaParceiro from './pages/SejaParceiro';
 
 function App() {
   const [isChecked, setIsChecked] = useState(false);
@@ -15,6 +16,7 @@ function App() {
           <div className="content">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/SejaParceiro" element={<SejaParceiro />} />
             </Routes>
           </div>
         )}
