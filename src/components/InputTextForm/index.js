@@ -1,3 +1,4 @@
+import ReactInputMask from 'react-input-mask';
 import styles from './InputTextForm.module.css'
 
 const InputTextForm = (props) => {
@@ -7,7 +8,7 @@ const InputTextForm = (props) => {
             htmlFor={props.forId}
             {...props.button}
             >{props.labelName}</label>
-            <input type='text' id={props.forId}/>
+            <ReactInputMask {...props} type='text' id={props.forId}/>
         </div>
     )
 }

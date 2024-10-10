@@ -32,11 +32,20 @@ const SejaParceiro = () => {
                 <div className='row'>
                     <InputTextForm
                     forId='Phone'
-                    labelName='Número de celular:＊' />
+                    labelName='Número de celular:＊'
+                    mask='(99) 99999-9999'
+                    />
                     <InputTextForm
                     forId='PhoneFix'
-                    labelName='Número fixo:' />
+                    labelName='Número fixo:'
+                    mask='(99) 9999-9999'
+                    />
                 </div>
+                <InputTextForm
+                    forId='CEP'
+                    labelName='CEP:'
+                    mask='99999-999'
+                    />
                 <Select
                     label={{
                         name: 'Estado＊'
@@ -67,6 +76,10 @@ const SejaParceiro = () => {
                     {selectedState !== '' ? <option value=''>Selecione uma cidade</option> : <option> </option>}
                     {cities.map(cities => <option key={cities.id}>{cities.nome}</option>)}
                 </Select>
+                <InputTextForm
+                    forId='Endereco'
+                    labelName='Endereço:'
+                    />
                 <BotaoPrincipal
                 type='submit'
                 texto='Enviar'
